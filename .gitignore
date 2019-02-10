@@ -1,0 +1,10 @@
+Infotem_TuiFly/bin
+Infotem_TuiFly/bin/*
+Infotem_TuiFly/obj
+Infotem_TuiFly/obj/*
+Infotem_TuiFly.Tests/bin
+Infotem_TuiFly.Tests/bin/*
+Infotem_TuiFly.Tests/obj
+Infotem_TuiFly.Tests/obj/*
+.vs
+.vscode
