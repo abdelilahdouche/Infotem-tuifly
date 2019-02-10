@@ -1,0 +1,60 @@
+﻿@model IEnumerable<InfoTemTuiFly.Models.FlightViewModel>
+
+@{
+    ViewData["Title"] = "Flight List";
+}
+
+<h2>Flight List</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeparatureId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DestinationId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Distance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consumption)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight.Deparature.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight.Destination.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distance) KM
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Consumption) L
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

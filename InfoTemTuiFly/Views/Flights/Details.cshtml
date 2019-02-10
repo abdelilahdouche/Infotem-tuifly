@@ -1,0 +1,48 @@
+﻿@model InfoTemTuiFly.Models.FlightViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Flight</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Flight.Deparature)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Flight.Deparature.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Flight.Destination)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Flight.Destination.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Distance)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Distance) KM
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Consumption)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Consumption) L
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
