@@ -22,9 +22,9 @@ namespace InfoTemTuiFly.Service
         /// <summary>
         /// Gets The log service
         /// </summary>
-        private readonly ILogger<AirportService> _logger;
+        private readonly ILogger<FlightService> _logger;
 
-        public FlightService(ApplicationContext db, ILogger<AirportService> logger)
+        public FlightService(ApplicationContext db, ILogger<FlightService> logger)
         {
             _db = db;
             _logger = logger;
