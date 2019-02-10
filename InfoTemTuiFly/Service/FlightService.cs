@@ -79,7 +79,7 @@ namespace InfoTemTuiFly.Service
         public Flight Save(Flight flight)
         {
             if (flight == null)
-                throw new NullReferenceException("airport can not be null");
+                throw new ArgumentNullException("airport can not be null");
             try
             {
                 if (flight.Id == 0)
