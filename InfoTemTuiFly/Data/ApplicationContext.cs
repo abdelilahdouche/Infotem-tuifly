@@ -8,9 +8,13 @@ namespace InfoTemTuiFly.Data
     /// </summary>
     public class ApplicationContext : DbContext
     {
+        /// <summary>
+        /// Ctor
+        /// </summary>
         public ApplicationContext()
         {
         }
+
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             : base(options)
         {

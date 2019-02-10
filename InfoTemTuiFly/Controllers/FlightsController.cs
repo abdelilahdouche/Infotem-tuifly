@@ -42,7 +42,7 @@ namespace InfoTemTuiFly.Controllers
         {
             if (!id.HasValue)
             {
-                return NotFound();
+                return BadRequest();
             }
 
             var flight = _flightService.GetById(id.Value);
