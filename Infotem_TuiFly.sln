@@ -16,36 +16,7 @@ Global
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Debug|x64.Build.0 = Debug|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Debug|x86.Build.0 = Debug|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Release|x64.ActiveCfg = Release|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Release|x64.Build.0 = Release|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Release|x86.ActiveCfg = Release|Any CPU
-		{004A219B-DD69-4074-9E7C-5F506B8ACB8D}.Release|x86.Build.0 = Release|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Debug|x64.Build.0 = Debug|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Debug|x86.Build.0 = Debug|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Release|Any CPU.Build.0 = Release|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Release|x64.ActiveCfg = Release|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Release|x64.Build.0 = Release|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Release|x86.ActiveCfg = Release|Any CPU
-		{63121A66-D453-4078-9682-DF5DDA9A4727}.Release|x86.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {406FBE59-1928-46EB-A13C-79514F0BE967}
 	EndGlobalSection
 EndGlobal
