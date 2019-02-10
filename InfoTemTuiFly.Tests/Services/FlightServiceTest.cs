@@ -35,9 +35,9 @@ namespace InfoTemTuiFly.Tests.Services
         public void FlightServiceTest_Save_Null()
         {
             //Arrange
-            Flight Flight = null;
+            Flight flight = null;
             //Act
-            var result = Assert.Throws<ArgumentNullException>(() => _flightService.Save(Flight));
+            var result = Assert.Throws<ArgumentNullException>(() => _flightService.Save(flight));
 
             //Assert
             Assert.IsNotNull(result);
@@ -48,13 +48,13 @@ namespace InfoTemTuiFly.Tests.Services
         public void FlightServiceTest_Save_New()
         {
             //Arrange
-            var Flight = new Flight() { Id = 0, Name = "Flight" };
+            var flight = new Flight() { Id = 0, Name = "Flight" };
             //Act
-            var result = _flightService.Save(Flight);
+            var result = _flightService.Save(flight);
 
             //Assert
             Assert.NotNull(result);
-            _appContext.Flight.Received().Add(Arg.Any<Flight>());
+            _appContext.Received().Add(Arg.Any<Flight>());
             _appContext.DidNotReceive().Update(Arg.Any<Flight>());
         }
 
@@ -62,13 +62,13 @@ namespace InfoTemTuiFly.Tests.Services
         public void FlightServiceTest_Save_Exist()
         {
             //Arrange
-            var Flight = new Flight() { Id = 1, Name = "Flight" };
+            var flight = new Flight() { Id = 1, Name = "Flight" };
             //Act
-            var result = _flightService.Save(Flight);
+            var result = _flightService.Save(flight);
 
             //Assert
             Assert.NotNull(result);
-            _appContext.Flight.DidNotReceive().Add(Arg.Any<Flight>());
+            _appContext.DidNotReceive().Add(Arg.Any<Flight>());
             _appContext.Received().Update(Arg.Any<Flight>());
         }
 
@@ -76,14 +76,13 @@ namespace InfoTemTuiFly.Tests.Services
         public void FlightServiceTest_Delete()
         {
             //Arrange
-            var Flight = new Flight() { Id = 1, Name = "Flight" };
-            _flightService.GetById(Arg.Is<int>(a => a > 0)).Returns(Flight);
+            var flight = new Flight() { Id = 1, Name = "Flight" };
             //Act
             var result = _flightService.Delete(1);
 
             //Assert
             Assert.IsTrue(result);
-            _appContext.Flight.Received().Remove(Flight);
+            _appContext.Flight.ReceivedWithAnyArgs().Remove(flight);
         }
     }
 }
