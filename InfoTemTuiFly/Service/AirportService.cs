@@ -74,7 +74,7 @@ namespace InfoTemTuiFly.Service
         public Airport Save(Airport airport)
         {
             if (airport == null)
-                throw new NullReferenceException("airport can not be null");
+                throw new ArgumentNullException("airport can not be null");
             try
             {
                 if (airport.Id == 0)
