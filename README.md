@@ -7,7 +7,7 @@ développé avec Asp.net core 2.1.1 et les composant suivant  :
 `Microsoft.EntityFrameworkCore.SQLite`
 [![Nuget version](https://badge.fury.io/nu/Microsoft.EntityFrameworkCore.SQLite.svg)](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/)
 
-J'ai choisi SQLite comme un SGBD  (moteur de gestion de base de données),simple à utilisé déjà implimenté dans entityframework, et qui ne naissite aucun installation
+J'ai choisi SQLite comme un SGBD  (moteur de gestion de base de données),simple à utiliser, déjà implimenté dans entityframework, et qui ne naissite aucun installation
 
 ### GeoCoordinate.NetCore
 
