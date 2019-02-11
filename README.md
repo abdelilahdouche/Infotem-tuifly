@@ -14,7 +14,7 @@ J'ai choisi SQLite comme un SGBD  (moteur de gestion de base de données), simpl
 [![Nuget version](https://badge.fury.io/nu/GeoCoordinate.NetCore.svg)](https://www.nuget.org/packages/GeoCoordinate.NetCore/)
 
 
-Une bibliothèque .NET(Nuget package) qui permet de calculer des distances à partir des coordonnées gps de deux points
+Une bibliothèque .NET(Nuget package) qui permet de calculer des distances à partir des coordonnées gps entre deux points (ex : entre deux aéreroports)
 
 ### Nsubstitute
 http://nsubstitute.github.io/
