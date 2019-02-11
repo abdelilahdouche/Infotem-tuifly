@@ -1,5 +1,5 @@
 # Infotem-Tuifly
-Cette application est une simple application pour la simulation de gestion des vols entre aéreroports et estimation des distance, et charges.
+Cette application est une simple application pour la simulation de gestion des vols entre aéreroports et estimation des distances, et charges.
 
 développé avec Asp.net core 2.1.1 et les composant suivant  :
 
@@ -7,14 +7,14 @@ développé avec Asp.net core 2.1.1 et les composant suivant  :
 `Microsoft.EntityFrameworkCore.SQLite`
 [![Nuget version](https://badge.fury.io/nu/Microsoft.EntityFrameworkCore.SQLite.svg)](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/)
 
-J'ai choisi SQLite comme un SGBD  (moteur de gestion de base de données),simple à utilisé déjà implimenté dans entityframework, et qui ne naissite aucun installation
+J'ai choisi SQLite comme un SGBD  (moteur de gestion de base de données), simple à utiliser, déjà implimenté dans entityframework, et qui ne nécessite aucune installation
 
 ### GeoCoordinate.NetCore
 
 [![Nuget version](https://badge.fury.io/nu/GeoCoordinate.NetCore.svg)](https://www.nuget.org/packages/GeoCoordinate.NetCore/)
 
 
-Une bibliothèque .NET(Nuget package) qui permet de calculer des distances à partir des coordonnées gps de deux points
+Une bibliothèque .NET(Nuget package) qui permet de calculer des distances à partir des coordonnées gps entre deux points (ex : entre deux aéreroports)
 
 ### Nsubstitute
 http://nsubstitute.github.io/
