@@ -1,5 +1,5 @@
 # Infotem-Tuifly
-Cette application est une simple application pour la simulation de gestion des vols entre aéreroports et estimation des distance, et charges.
+Cette application est une simple application pour la simulation de gestion des vols entre aéreroports et estimation des distances, et charges.
 
 développé avec Asp.net core 2.1.1 et les composant suivant  :
 
